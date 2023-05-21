@@ -27,10 +27,10 @@ const progress = document.getElementById ("progress");
 
 const loader = new GLTFLoader();
 
-loader.load( '../assets/cat.glb', function ( cat ) {
-	console.log(cat);
-	scene.add( cat.scene );
-	cat.scene.rotation.set(0, -Math.PI/2, 0);
+loader.load( '../assets/dog.glb', function ( dog ) {
+	console.log(dog);
+	scene.add( dog.scene );
+	dog.scene.rotation.set(0, -Math.PI/2, 0);
 
 }, function ( xhr ) {
 	progress.innerHTML =  ( xhr.loaded / xhr.total * 100 ) + '% loaded';
